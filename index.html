@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -12,20 +13,37 @@
 
       </header>
       <main>
-           <section>
-                 
-                 <div class="food flex gap-0.5">
-                    <h2 class=" m-5"> Food</h2>    <input id="food-Input" class="border-2 m-5"  type="text">
-                </div>
-                <div class="food flex gap-0.5">
-                <h2 class=" m-5"> Rent</h2>     <input id="rent-Input" class="border-2 m-5" type="text">
-              </div>
-              <div class="food flex gap-0.5">
-               <h2 class=" m-5"> Others</h2>  <input id="others-Input" class="border-2 m-5" type="text">
-            </div>
-            <button id="calulate" class="border-2 bg-red-400 ml-10 "> calculate</button>
+           <Section>
+            <div class="grid gap-4 grid-cols-2 grid-rows-3 mt-7">
+                  <div class="box bg-red-400 "> <img src="img/money.jpg" class="a" alt=""></div>
+                  <div class="box bg-red-400">  
+                       <div class="budget-from  mt-7 ml-80 ">
+                               <h2>Income</h2>
+                               <div class=" flex items-center justify-items-center ">
+                              <p>Income:</p> <input class="m-2" type="text">
+                            </div>
+                                <h2>Expanse</h2>
+                                <div class="flex  items-center justify-items-center">
+                                <p>Food:</p> <input class="m-2" type="text">
+                            </div>
+                                <div class="flex items-center justify-items-center">
+                                <p>Rent:</p> <input class=" m-2" type="text">
+                            </div>
+                            <div class="flex items-center justify-items-center">
 
-           </section>
+                                <p>Clothes:</p> <input class=" m-2" type="text">
+                            </div>
+
+                             <button class=" border-2 rounded bg-pink-400 mx-10"> calculate </button>
+                             <h3>total Expanse</h3>
+                             <h2>Balance</h2>
+                      
+                        </div>
+                  </div>
+                 
+              </div>
+
+           </Section>
 
       </main>
       <footer>
