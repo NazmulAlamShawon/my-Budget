@@ -14,10 +14,14 @@
       </header>
       <main>
            <Section>
+               <h2 class="text-center mt-10 bg-green-400 text-3xl">My Budget</h2>
             <div class="grid gap-4 grid-cols-2 grid-rows-2 mt-5  bg-gray-400">
-                  <div class="box bg-red-400 h-96"> <img src="img/money.jpg" class="a" alt=""></div>
-                  <div class="box bg-red-400">  
-                       <div class="budget-from  mt-3 ml-80  ">
+                <!-- image  -->
+                  <div class="box h-96"> <img src="img/money.jpg" class="" alt=""></div>
+                  <div class="box ">  
+                      <!-- // budget from -->
+                       <div class="budget-from p-10 mt-3 ml-80  bg-gray-300 ">
+
                                <h2>Income</h2>
                                <div class=" flex items-center justify-items-center ">
                               <p>Income:</p> <input  id="income-input" class="ml-5" type="number">
@@ -36,16 +40,16 @@
                                 <p>Clothes:</p> <input id="clothes-number" value=""  class=" ml-5 mt-2" type="number">
                             </div>
 
-                             <button  id="calculet-btn" onclick=" return myExpanse()"  class=" border-2 rounded bg-pink-400  mt-5"> calculate </button>
+                             <button  id="calculet-btn" onclick=" return myExpanse()"  class=" border-2 rounded bg-pink-400  mt-5 ml-5"> calculate </button>
                              <h3>total Expanse:$ <span id="expanse-total" > 00</span></h3>
                              <h2>Balance: <span id="balance-total">00</span></h2>
                              <div class="btn-group flex items-center justify-items-center mt-2">
-                                 <p>Save:</p> <button class="border-2 rounded bg-gray400 ml-5"><span id="saving"> 20</span></button> <button class="  border-2 rounded bg-pink-400  ml-3">save</button>
+                                 <p>Save:</p> <button id="modulus" class="border-2 rounded bg-gray400 ml-5" >20</button> <button class="  border-2 rounded bg-pink-400  ml-3"  onclick="mysaving()" >save</button>
                              </div>
                              <div class="mt-3">
                              <h3> Saving Ammount: <span id="savingAccount">00</span>;
                              <h3> Remaining Balance: <span id="remaing-balance">00</span></h3>  
-                            </div>
+                           </div>
                       
                         </div>
                   </div>

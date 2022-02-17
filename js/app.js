@@ -10,7 +10,12 @@ function myExpanse(){
      const expanseTotal =  document.getElementById('expanse-total').innerHTML=(foodName+rentName+clothes);
      const salaryRange = document.getElementById('balance-total').innerHTML=(salary- expanseTotal);
      return salaryRange;
-
+    
+    
+     
 }
 
 
+
+  //  const savingAcount = document.getElementById('savingAccount').innerHTML=(salaryRange - expanseTotal);
+    //  const remainBalance = document.getElementById('remaing-balance').innerHTML=(salaryRange- savingAcount );
