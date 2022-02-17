@@ -1,4 +1,5 @@
 function myExpanse(){
+    
      const income = document.getElementById('income-input').value;
      const salary = parseFloat(income);
      const foodAmount  = document.getElementById('food-Number').value;
@@ -9,7 +10,8 @@ function myExpanse(){
      const clothes = parseFloat(clothesAmount);
      const expanseTotal =  document.getElementById('expanse-total').innerHTML=(foodName+rentName+clothes);
      const salaryRange = document.getElementById('balance-total').innerHTML=(salary- expanseTotal);
-        const savingAcount = document.getElementById('savingAccount').innerHTML=(salaryRange - expanseTotal);
+
+     const savingAcount = document.getElementById('savingAccount').innerHTML=( expanseTotal-salaryRange);
      const remainBalance = document.getElementById('remaing-balance').innerHTML=(salaryRange- savingAcount );
      return remainBalance;
     
@@ -19,5 +21,3 @@ function myExpanse(){
 
 
 
-  //  const savingAcount = document.getElementById('savingAccount').innerHTML=(salaryRange - expanseTotal);
-    //  const remainBalance = document.getElementById('remaing-balance').innerHTML=(salaryRange- savingAcount );
