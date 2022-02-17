@@ -20,29 +20,31 @@
                        <div class="budget-from  mt-3 ml-80  ">
                                <h2>Income</h2>
                                <div class=" flex items-center justify-items-center ">
-                              <p>Income:</p> <input class="ml-5" type="text">
+                              <p>Income:</p> <input  id="income-input" class="ml-5" type="text">
                             </div>
                                 <h2 class="text-center mt-2 mb-2">Expanse</h2>
+
                                 <div class="flex  items-center justify-items-center">
-                                <p>Food:</p> <input class="ml-9" type="text">
+                                <p>Food:</p> <input id="food-input" class="ml-9" type="text">
                             </div>
+
                                 <div class="flex items-center justify-items-center">
-                                <p>Rent:</p> <input class=" ml-10 mt-2" type="text">
+                                <p>Rent:</p> <input id="rent-input"  class=" ml-10 mt-2" type="text">
                             </div>
                             <div class="flex items-center justify-items-center">
 
-                                <p>Clothes:</p> <input class=" ml-5 mt-2" type="text">
+                                <p>Clothes:</p> <input id="clothes-input" class=" ml-5 mt-2" type="text">
                             </div>
 
-                             <button class=" border-2 rounded bg-pink-400  mt-5"> calculate </button>
-                             <h3>total Expanse: 00</h3>
-                             <h2>Balance: 00</h2>
+                             <button  id="calculet-btn"  class=" border-2 rounded bg-pink-400  mt-5"> calculate </button>
+                             <h3>total Expanse:$ <span id="expanse-total" > 00</span></h3>
+                             <h2>Balance: <span id="balance-total"> 10000</span></h2>
                              <div class="btn-group flex items-center justify-items-center mt-2">
                                  <p>Save:</p> <button class="border-2 rounded bg-gray400 ml-5">20</button> <button class="  border-2 rounded bg-pink-400  ml-3">save</button>
                              </div>
                              <div class="mt-3">
                              <h3> Saving Ammount: 00</h3>  
-                             <h3> Remaining Balance: 00</h3>  
+                             <h3> Remaining Balance: <span id="remaing-balance">00</span></h3>  
                             </div>
                       
                         </div>
@@ -57,5 +59,6 @@
 
       </footer>
       <script src="js/app.js"></script>
+      <script src="js/balance.js"></script>
 </body>
 </html>
